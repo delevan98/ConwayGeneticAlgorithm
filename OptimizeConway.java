@@ -26,8 +26,7 @@ public class OptimizeConway
       bestEnd = new int[rows][columns];    
    }
     
-    //Gets the playing board from a 8x8 array from a file and places
-    //it in the middle of the playing board
+    //Randomly fills in the playing board to an 8x8 array 
     public void getBoard()
     {
       Random random = new Random();
@@ -188,7 +187,7 @@ public class OptimizeConway
       int count = 0;
       int fitness = 0;
       
-      while(count < 100)
+      while(count < 10000)
       {
          getBoard(); //set initial board
          
